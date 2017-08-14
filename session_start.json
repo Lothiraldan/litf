@@ -13,5 +13,6 @@
       "type": "integer"
     }
   },
+  "required": ["_type", "test_number"],
   "type": "object"
 }
