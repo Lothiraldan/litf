@@ -23,8 +23,37 @@
     "test_name": {
       "id": "/properties/test_name",
       "type": "string"
+    },
+    "file": {
+      "id": "/properties/file",
+      "type": "string"
+    },
+    "line": {
+      "id": "/properties/line",
+      "type": "integer"
+    },
+    "stdout": {
+      "id": "/properties/stdout",
+      "type": "string"
+    },
+    "stderr": {
+      "id": "/properties/stderr",
+      "type": "string"
+    },
+    "errors": {
+      "id": "/properties/errors",
+      "type": "object"
+    },
+    "skipped_messages": {
+      "id": "/properties/skipped_messages",
+      "type": "object"
+    },
+    "durations": {
+      "id": "/properties/durations",
+      "type": "object"
     }
   },
-  "required": ["_type", "id"],
+  "required": ["_type", "id", "outcome"],
+  "additionalProperties": false,
   "type": "object"
 }

@@ -14,5 +14,6 @@
     }
   },
   "required": ["_type", "test_number"],
+  "additionalProperties": false,
   "type": "object"
 }

@@ -29,7 +29,8 @@
       "type": "number"
     }
   },
-  "required": ["_type"],
+  "required": ["_type", "error", "failed", "passed", "skipped", "total_duration"],
+  "additionalProperties": false,
   "type": "object"
 }
 

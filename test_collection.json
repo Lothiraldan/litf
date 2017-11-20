@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "_type": {
+      "id": "/properties/_type",
+      "type": "string",
+      "enum": ["test_collection"]
+    },
+    "id": {
+      "id": "/properties/id",
+      "type": "string"
+    },
+    "test_name": {
+      "id": "/properties/test_name",
+      "type": "string"
+    },
+    "file": {
+      "id": "/properties/file",
+      "type": "string"
+    },
+    "line": {
+      "id": "/properties/line",
+      "type": "integer"
+    }
+  },
+  "required": ["_type", "id"],
+  "additionalProperties": false,
+  "type": "object"
+}
