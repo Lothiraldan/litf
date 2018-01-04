@@ -21,3 +21,7 @@ Usual emitters are test tools or frameworks.
 ## Test orchestrator
 
 - Balto: [BAdass Language independent Test Orchestrator](https://lothiraldan.github.io/balto/).
+
+# Validator
+
+You can use the `test.py` script to validate that an output is LITF valid. You can use it like this `pytest-litf "{}" | python /path/to/litf/test.py` or `python /path/to/litf/test.py < TEST_OUTPUT`.

@@ -2,10 +2,7 @@
 """
 
 import json
-import os
 import os.path
-import shlex
-import subprocess
 import sys
 
 from jsonschema import ValidationError, validate
@@ -13,22 +10,14 @@ from jsonschema import ValidationError, validate
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
-def test(cmd, directory):
-    # Change directory
-    os.chdir(directory)
-
-    # Launch the script
-    # TODO check input too
-    process = subprocess.Popen(
-        cmd, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
+def test():
     errors = []
     warnings = []
     total_lines = 0
     valid_lines = 0
 
     # Check stdout
-    for line in process.stdout:
+    for line in sys.stdin:
 
         line = line.strip()
 
@@ -39,25 +28,18 @@ def test(cmd, directory):
         # Count not empty lines
         total_lines += 1
 
-        # Check that the data is UTF-8
-        try:
-            decodedline = line.decode("UTF-8")
-        except UnicodeDecodeError:
-            errors.append(("Invalid UTF-8 line", repr(decodedline)))
-            continue
-
         # Check that the data is valid JSON
         try:
-            data = json.loads(decodedline)
+            data = json.loads(line)
         except (json.JSONDecodeError, ValueError) as e:
-            errors.append(("Invalid JSON line", decodedline))
+            errors.append(("Invalid JSON line", line))
             continue
 
         # Get the msg type
         try:
             msg_type = data["_type"]
         except KeyError:
-            errors.append(("Missing msg_type", decodedline))
+            errors.append(("Missing msg_type", line))
             continue
 
         # Get the schema
@@ -70,17 +52,13 @@ def test(cmd, directory):
         try:
             validate(data, schema)
         except ValidationError as exc:
-            errors.append(("Invalid data", decodedline, str(exc)))
+            errors.append(("Invalid data", line, str(exc)))
             continue
 
         # Validate the logic
         # TODO
 
         valid_lines += 1
-
-    # Check stderr
-    for line in process.stderr:
-        warnings.append(("Stderr line", repr(line)))
 
     print("%d/%d valid lines" % (valid_lines, total_lines))
 
@@ -102,4 +80,4 @@ def test(cmd, directory):
 
 
 if __name__ == "__main__":
-    test(sys.argv[1:-1], sys.argv[-1])
+    test()
