@@ -40,9 +40,15 @@
       "id": "/properties/stderr",
       "type": "string"
     },
-    "errors": {
-      "id": "/properties/errors",
-      "type": "object"
+    "error": {
+      "id": "/properties/error",
+      "type": "object",
+      "properties": {
+        "humanrepr": {
+          "id": "/properties/error/humanrepr",
+          "type": "string"
+        }
+      }
     },
     "skipped_messages": {
       "id": "/properties/skipped_messages",
@@ -50,7 +56,10 @@
     },
     "durations": {
       "id": "/properties/durations",
-      "type": "object"
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {"type": "number"}
+      }
     }
   },
   "required": ["_type", "id", "outcome"],
