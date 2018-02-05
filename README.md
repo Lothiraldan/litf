@@ -20,7 +20,7 @@ Usual emitters are test tools or frameworks.
 
 ## Test orchestrator
 
-- Balto: [BAdass Language independent Test Orchestrator](https://lothiraldan.github.io/balto/).
+- Balto: [BAlto is a Language independent Test Orchestrator](https://lothiraldan.github.io/balto/).
 
 # Validator
 
