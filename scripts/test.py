@@ -4,10 +4,12 @@
 import json
 import os.path
 import sys
+from os.path import abspath, dirname, join
 
 from jsonschema import ValidationError, validate
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
+current_dir = dirname(abspath(__file__))
+script_dir = join(current_dir, '../spec')
 
 
 def test():
