@@ -85,6 +85,7 @@ The format doesn't handle yet:
 - Support for snapshot testing, with either a textual or graphical diff.
 - The version of the spec.
 - Collection and runner errors.
+- Log lines with their levels, DEBUG, INFO, ERROR...
 
 # Input example
 
@@ -113,3 +114,19 @@ For running specific tests, they would receive:
 ```bash
 tool-litf '{"nodeids": ["test_id1", "test_id2"]}'
 ```
+
+# Alternatives
+
+## Why not Junit.xml?
+
+While `junit.xml` is a well-known test output format, it main problem is that there is a single big file generated at the end of the build. So you cannot have information about the build before the end of it. It doesn't seems to be a central specification that is language agnostic.
+
+## Why not TAP?
+
+[TAP](http://testanything.org/) is another well-know test output format. TAP main problem is that it requires a custom parser while most of languages have already a JSON parser library.
+
+Moreover, a test failure in TAP extends over several lines while in LITF a single line contains everything about a test, passing or not.
+
+## Why not Mozlog?
+
+[Mozlog](https://firefox-source-docs.mozilla.org/mozbase/mozlog.html#data-format) is a lesser-known test output format. While similar to LITF, it support more complex cases involving sub-tests. It also requires two messages per test run, one `test_start` and one `test_end` which would requires more logic on the parsers.  
