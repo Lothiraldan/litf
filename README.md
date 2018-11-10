@@ -2,7 +2,7 @@
 
 Language Independent Test Format is a new effort to have a language-independent test output format that is designed to be easy to produce and consume.
 
-It's somehow equivalent of Junit.xml but based on Line-delimited JSON and can be consumed in a streaming fashion. 
+It's somehow equivalent of Junit.xml but based on Line-delimited JSON and can be consumed in a streaming fashion.
 
 It's also a JSON-based input format able to select exactly the tests to run in a tool and language independent way.
 
@@ -129,4 +129,8 @@ Moreover, a test failure in TAP extends over several lines while in LITF a singl
 
 ## Why not Mozlog?
 
-[Mozlog](https://firefox-source-docs.mozilla.org/mozbase/mozlog.html#data-format) is a lesser-known test output format. While similar to LITF, it support more complex cases involving sub-tests. It also requires two messages per test run, one `test_start` and one `test_end` which would requires more logic on the parsers.  
+[Mozlog](https://firefox-source-docs.mozilla.org/mozbase/mozlog.html#data-format) is a lesser-known test output format. While similar to LITF, it support more complex cases involving sub-tests. It also requires two messages per test run, one `test_start` and one `test_end` which would requires more logic on the parsers.
+
+## Why not subunit?
+
+[Subunit](https://github.com/testing-cabal/subunit) is the format closest to what LITF tries to achieve. It already has support for several producing libraries in several languages. The biggest differences are that it's a binary protocol and has a more stream-based design, it's designed to easily merge, filter and transform output streams. Replacing LITF with subunit by adding needed LITF characteristics (input format and extensibility) is currently under consideration.
