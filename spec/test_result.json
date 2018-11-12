@@ -40,6 +40,10 @@
       "id": "/properties/stderr",
       "type": "string"
     },
+    "logs": {
+      "id": "/properties/logs",
+      "type": "string"
+    },
     "error": {
       "id": "/properties/error",
       "type": "object",
