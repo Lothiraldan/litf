@@ -1,6 +1,6 @@
 """ Test runner for validating LITF plugins
 """
-
+import argparse
 import json
 import os.path
 import sys
@@ -12,14 +12,14 @@ current_dir = dirname(abspath(__file__))
 script_dir = join(current_dir, '../spec')
 
 
-def test():
+def test(stream):
     errors = []
     warnings = []
     total_lines = 0
     valid_lines = 0
 
     # Check stdout
-    for line in sys.stdin:
+    for line in stream.readlines():
 
         line = line.strip()
 
@@ -82,4 +82,15 @@ def test():
 
 
 if __name__ == "__main__":
-    test()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "stream", help="Which file to read, use - for reading stdin instead", action="store", default="-"
+    )
+
+    args = parser.parse_args()
+
+    if args.stream == "-":
+        test(sys.stdin)
+    else:
+        with open(args.stream) as stream:
+            test(stream)
