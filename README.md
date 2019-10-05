@@ -18,6 +18,10 @@ Usual emitters are test tools or frameworks.
 
 - Pytest: [pytest-litf](https://github.com/Lothiraldan/pytest-litf).
 
+## Shell
+
+- Mercurial: [mercurial-litf](https://bitbucket.org/lothiraldan/mercurial_litf).
+
 # Compatible consumers
 
 ## Test orchestrator
