@@ -127,9 +127,11 @@ While `junit.xml` is a well-known test output format, it main problem is that th
 
 ## Why not TAP?
 
-[TAP](http://testanything.org/) is another well-know test output format. TAP main problem is that it requires a custom parser while most of languages have already a JSON parser library.
+[TAP](http://testanything.org/) is another well-know test output format. TAP main difference is that it requires a custom parser while most of languages have already a JSON parser library.
 
 Moreover, a test failure in TAP extends over several lines while in LITF a single line contains everything about a test, passing or not.
+
+TAP by default has very few defined fields (status, test number and a description) and include a free-form Yaml Form but as of version 13 the format has not been standardized.
 
 ## Why not Mozlog?
 
