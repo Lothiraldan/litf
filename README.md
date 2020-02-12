@@ -1,18 +1,24 @@
 # LITF
 
-Language Independent Test Format is a new effort to have a language-independent test output format that is designed to be easy to produce and consume.
+Language Independent Test Format is a new effort to have a language-independent test output and input format that is designed to be easy to produce and consume.
 
-It's somehow equivalent of Junit.xml but based on Line-delimited JSON and can be consumed in a streaming fashion.
+# Goals
 
-It's also a JSON-based input format able to select exactly the tests to run in a tool and language independent way.
+The goals of this new format are:
 
-# JSON-Schema
+- Be streamable.
+- Be easy to write and read.
+- Be extensible.
+- Be an input format too.
+- Be independant from any implementation.
 
-The format is designed as test-formats present in the `spec` directory.
+# Definition
+
+LITF is currently defined as a [JSON Lines](http://jsonlines.org/) format where every kind of message is defined as a separate JSON-Format. The specifications are located on the `spec` directory.
 
 # Compatible emitters
 
-Usual emitters are test tools or frameworks.
+Usual emitters are test tools or test frameworks.
 
 ## Python
 
@@ -123,7 +129,9 @@ tool-litf '{"nodeids": ["test_id1", "test_id2"]}'
 
 ## Why not Junit.xml?
 
-While `junit.xml` is a well-known test output format, it main problem is that there is a single big file generated at the end of the build. So you cannot have information about the build before the end of it. It doesn't seems to be a central specification that is language agnostic.
+While `junit.xml` is a well-known test output format, it main problem is that there is a single big file generated at the end of the build. So you cannot have information about the build before the end of it.
+
+There doesn't seems to have a central and documented definition of the specification.
 
 ## Why not TAP?
 
