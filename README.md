@@ -127,24 +127,4 @@ tool-litf '{"nodeids": ["test_id1", "test_id2"]}'
 
 # Alternatives
 
-## Why not Junit.xml?
-
-While `junit.xml` is a well-known test output format, it main problem is that there is a single big file generated at the end of the build. So you cannot have information about the build before the end of it.
-
-There doesn't seems to have a central and documented definition of the specification.
-
-## Why not TAP?
-
-[TAP](http://testanything.org/) is another well-know test output format. TAP main difference is that it requires a custom parser while most of languages have already a JSON parser library.
-
-Moreover, a test failure in TAP extends over several lines while in LITF a single line contains everything about a test, passing or not.
-
-TAP by default has very few defined fields (status, test number and a description) and include a free-form Yaml Form but as of version 13 the format has not been standardized.
-
-## Why not Mozlog?
-
-[Mozlog](https://firefox-source-docs.mozilla.org/mozbase/mozlog.html#data-format) is a lesser-known test output format. While similar to LITF, it support more complex cases involving sub-tests. It also requires two messages per test run, one `test_start` and one `test_end` which would requires more logic on the parsers.
-
-## Why not subunit?
-
-[Subunit](https://github.com/testing-cabal/subunit) is the format closest to what LITF tries to achieve. It already has support for several producing libraries in several languages. The biggest differences are that it's a binary protocol and has a more stream-based design, it's designed to easily merge, filter and transform output streams. Replacing LITF with subunit by adding needed LITF characteristics (input format and extensibility) is currently under consideration.
+See [Comparison doc](_docs/comparison.md).
