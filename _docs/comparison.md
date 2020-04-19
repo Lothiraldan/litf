@@ -38,11 +38,12 @@ The goal of LITF is to offer both an output format for test result (which is sim
 
 [TAP-Y and TAP-J](https://github.com/rubyworks/tapout/wiki/TAP-Y-J-Specification) are test streams loosely based on TAP. TAP-Y is based on YAML while TAP-J is based on JSON lines. TAP-J is extremely close to LITF.
 
+[https://github.com/rubyworks/tapout](https://github.com/rubyworks/tapout)
+
 ## Pro
 
 ## Cons
 
-https://github.com/rubyworks/tapout
 
 # LITF vs Mozlog
 
