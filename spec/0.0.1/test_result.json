@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "_type": {
+      "enum": [
+        "test_result"
+      ],
+      "id": "/properties/_type",
+      "type": "string"
+    },
+    "duration": {
+      "id": "/properties/duration",
+      "type": "number"
+    },
+    "durations": {
+      "id": "/properties/durations",
+      "patternProperties": {
+        "^.*$": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "error": {
+      "id": "/properties/error",
+      "properties": {
+        "humanrepr": {
+          "id": "/properties/error/humanrepr",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "file": {
+      "id": "/properties/file",
+      "type": "string"
+    },
+    "id": {
+      "id": "/properties/id",
+      "type": "string"
+    },
+    "line": {
+      "id": "/properties/line",
+      "type": "integer"
+    },
+    "logs": {
+      "id": "/properties/logs",
+      "type": "string"
+    },
+    "outcome": {
+      "id": "/properties/outcome",
+      "type": "string"
+    },
+    "skipped_messages": {
+      "id": "/properties/skipped_messages",
+      "type": "object"
+    },
+    "stderr": {
+      "id": "/properties/stderr",
+      "type": "string"
+    },
+    "stdout": {
+      "id": "/properties/stdout",
+      "type": "string"
+    },
+    "test_name": {
+      "id": "/properties/test_name",
+      "type": "string"
+    }
+  },
+  "required": [
+    "_type",
+    "id",
+    "outcome"
+  ],
+  "type": "object"
+}
