@@ -7,9 +7,9 @@ undefined
 
 
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                             |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | -------------------------------------------------------------------------------------- |
-| Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [session_end.schema.json](../../../out/session_end.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
+| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [session_end.schema.json](../../../spec/0.0.1/session_end.schema.json "open original schema") |
 
 ## Untitled object in undefined Type
 
