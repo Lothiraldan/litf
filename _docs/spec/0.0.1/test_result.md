@@ -1,53 +1,125 @@
-# Untitled object in undefined Schema
+# A single test result Schema
 
 ```txt
-undefined
+test_rest
 ```
 
-
+The test_collection message contains all identifying information about a test, its status and any information needed to debug it.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | --------------------------------------------------------------------------------------------- |
 | Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [test_result.schema.json](../../../spec/0.0.1/test_result.schema.json "open original schema") |
 
-## Untitled object in undefined Type
+## A single test result Type
 
-`object` ([Details](test_result.md))
+`object` ([A single test result](test_result.md))
 
-# undefined Properties
+## A single test result Examples
 
-| Property                              | Type      | Required | Nullable       | Defined by                                                                                             |
-| :------------------------------------ | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------- |
-| [\_type](#_type)                      | `string`  | Required | cannot be null | [Untitled schema](test_result-properties-_type.md "undefined#/properties/\_type")                      |
-| [duration](#duration)                 | `number`  | Optional | cannot be null | [Untitled schema](test_result-properties-duration.md "undefined#/properties/duration")                 |
-| [durations](#durations)               | `object`  | Optional | cannot be null | [Untitled schema](test_result-properties-durations.md "undefined#/properties/durations")               |
-| [error](#error)                       | `object`  | Optional | cannot be null | [Untitled schema](test_result-properties-error.md "undefined#/properties/error")                       |
-| [file](#file)                         | `string`  | Optional | cannot be null | [Untitled schema](test_result-properties-file.md "undefined#/properties/file")                         |
-| [id](#id)                             | `string`  | Required | cannot be null | [Untitled schema](test_result-properties-id.md "undefined#/properties/id")                             |
-| [line](#line)                         | `integer` | Optional | cannot be null | [Untitled schema](test_result-properties-line.md "undefined#/properties/line")                         |
-| [logs](#logs)                         | `string`  | Optional | cannot be null | [Untitled schema](test_result-properties-logs.md "undefined#/properties/logs")                         |
-| [outcome](#outcome)                   | `string`  | Required | cannot be null | [Untitled schema](test_result-properties-outcome.md "undefined#/properties/outcome")                   |
-| [skipped_messages](#skipped_messages) | `object`  | Optional | cannot be null | [Untitled schema](test_result-properties-skipped_messages.md "undefined#/properties/skipped_messages") |
-| [stderr](#stderr)                     | `string`  | Optional | cannot be null | [Untitled schema](test_result-properties-stderr.md "undefined#/properties/stderr")                     |
-| [stdout](#stdout)                     | `string`  | Optional | cannot be null | [Untitled schema](test_result-properties-stdout.md "undefined#/properties/stdout")                     |
-| [test_name](#test_name)               | `string`  | Optional | cannot be null | [Untitled schema](test_result-properties-test_name.md "undefined#/properties/test_name")               |
+```json
+{
+  "_type": "test_result",
+  "duration": 0.00029659271240234375,
+  "durations": {
+    "call": 0.00007081031799316406,
+    "setup": 0.00016164779663085938,
+    "teardown": 0.00006413459777832031
+  },
+  "error": {
+    "humanrepr": ""
+  },
+  "file": "test_class.py",
+  "id": "test_class.py::TestClassPassing::()::test_passing",
+  "line": 8,
+  "outcome": "passed",
+  "skipped_messages": {},
+  "stderr": "",
+  "stdout": "",
+  "test_name": "TestClassPassing.test_passing"
+}
+```
+
+```json
+{
+  "_type": "test_result",
+  "duration": 0.0004444122314453125,
+  "durations": {
+    "call": 0.00015401840209960938,
+    "setup": 0.00010013580322265625,
+    "teardown": 0.00019025802612304688
+  },
+  "error": {
+    "humanrepr": "self = <test_class.TestClassFailing object at 0x7f7fd3fd18d0>\n\n    def test_failing(self):\n>       assert False\nE       assert False\n\ntest_class.py:22: AssertionError"
+  },
+  "file": "test_class.py",
+  "id": "test_class.py::TestClassFailing::()::test_failing",
+  "line": 20,
+  "outcome": "failed",
+  "skipped_messages": {},
+  "stderr": "",
+  "stdout": "",
+  "test_name": "TestClassFailing.test_failing"
+}
+```
+
+```json
+{
+  "_type": "test_result",
+  "duration": 0.00018453598022460938,
+  "durations": {
+    "setup": 0.00010895729064941406,
+    "teardown": 0.00007557868957519531
+  },
+  "error": {
+    "humanrepr": ""
+  },
+  "file": "test_skip.py",
+  "id": "test_skip.py::test_skip_function",
+  "line": 2,
+  "outcome": "skipped",
+  "skipped_messages": {
+    "setup": "Skipped: Skip"
+  },
+  "stderr": "",
+  "stdout": "",
+  "test_name": "test_skip_function"
+}
+```
+
+# A single test result Properties
+
+| Property                              | Type      | Required | Nullable       | Defined by                                                                                                             |
+| :------------------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| [\_type](#_type)                      | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")           |
+| [duration](#duration)                 | `number`  | Optional | cannot be null | [A single test result](test_result-properties-the-duration-schema.md "\#/properties/duration#/properties/duration")    |
+| [durations](#durations)               | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-durations-schema.md "\#/properties/durations#/properties/durations") |
+| [error](#error)                       | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-error-schema.md "\#/properties/error#/properties/error")             |
+| [file](#file)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-file-schema.md "\#/properties/file#/properties/file")                |
+| [id](#id)                             | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-id-schema.md "\#/properties/id#/properties/id")                      |
+| [line](#line)                         | `integer` | Optional | cannot be null | [A single test result](test_result-properties-the-line-schema.md "\#/properties/line#/properties/line")                |
+| [logs](#logs)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-logs.md "test_rest#/properties/logs")                                    |
+| [outcome](#outcome)                   | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-outcome-schema.md "\#/properties/outcome#/properties/outcome")       |
+| [skipped_messages](#skipped_messages) | `object`  | Optional | cannot be null | [A single test result](test_result-properties-skipped_messages.md "test_rest#/properties/skipped_messages")            |
+| [stderr](#stderr)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stderr-schema.md "\#/properties/stderr#/properties/stderr")          |
+| [stdout](#stdout)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stdout-schema.md "\#/properties/stdout#/properties/stdout")          |
+| [test_name](#test_name)               | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name") |
 
 ## \_type
 
-
+An explanation about the purpose of this instance.
 
 
 `_type`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The \_type schema](test_result-properties-the-_type-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-_type.md "undefined#/properties/\_type")
+-   defined in: [A single test result](test_result-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")
 
 ### \_type Type
 
-`string`
+`string` ([The \_type schema](test_result-properties-the-_type-schema.md))
 
 ### \_type Constraints
 
@@ -59,99 +131,123 @@ undefined
 
 ## duration
 
-
+An explanation about the purpose of this instance.
 
 
 `duration`
 
 -   is optional
--   Type: `number`
+-   Type: `number` ([The duration schema](test_result-properties-the-duration-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-duration.md "undefined#/properties/duration")
+-   defined in: [A single test result](test_result-properties-the-duration-schema.md "\#/properties/duration#/properties/duration")
 
 ### duration Type
 
-`number`
+`number` ([The duration schema](test_result-properties-the-duration-schema.md))
+
+### duration Examples
+
+```json
+0.00029659271240234375
+```
 
 ## durations
 
-
+An explanation about the purpose of this instance.
 
 
 `durations`
 
 -   is optional
--   Type: `object` ([Details](test_result-properties-durations.md))
+-   Type: `object` ([The durations schema](test_result-properties-the-durations-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-durations.md "undefined#/properties/durations")
+-   defined in: [A single test result](test_result-properties-the-durations-schema.md "\#/properties/durations#/properties/durations")
 
 ### durations Type
 
-`object` ([Details](test_result-properties-durations.md))
+`object` ([The durations schema](test_result-properties-the-durations-schema.md))
 
 ## error
 
-
+An explanation about the purpose of this instance.
 
 
 `error`
 
 -   is optional
--   Type: `object` ([Details](test_result-properties-error.md))
+-   Type: `object` ([The error schema](test_result-properties-the-error-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-error.md "undefined#/properties/error")
+-   defined in: [A single test result](test_result-properties-the-error-schema.md "\#/properties/error#/properties/error")
 
 ### error Type
 
-`object` ([Details](test_result-properties-error.md))
+`object` ([The error schema](test_result-properties-the-error-schema.md))
 
 ## file
 
-
+An explanation about the purpose of this instance.
 
 
 `file`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The file schema](test_result-properties-the-file-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-file.md "undefined#/properties/file")
+-   defined in: [A single test result](test_result-properties-the-file-schema.md "\#/properties/file#/properties/file")
 
 ### file Type
 
-`string`
+`string` ([The file schema](test_result-properties-the-file-schema.md))
+
+### file Examples
+
+```json
+"test_class.py"
+```
 
 ## id
 
-
+An explanation about the purpose of this instance.
 
 
 `id`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The id schema](test_result-properties-the-id-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-id.md "undefined#/properties/id")
+-   defined in: [A single test result](test_result-properties-the-id-schema.md "\#/properties/id#/properties/id")
 
 ### id Type
 
-`string`
+`string` ([The id schema](test_result-properties-the-id-schema.md))
+
+### id Examples
+
+```json
+"test_class.py::TestClassPassing::()::test_passing"
+```
 
 ## line
 
-
+An explanation about the purpose of this instance.
 
 
 `line`
 
 -   is optional
--   Type: `integer`
+-   Type: `integer` ([The line schema](test_result-properties-the-line-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-line.md "undefined#/properties/line")
+-   defined in: [A single test result](test_result-properties-the-line-schema.md "\#/properties/line#/properties/line")
 
 ### line Type
 
-`integer`
+`integer` ([The line schema](test_result-properties-the-line-schema.md))
+
+### line Examples
+
+```json
+8
+```
 
 ## logs
 
@@ -163,7 +259,7 @@ undefined
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-logs.md "undefined#/properties/logs")
+-   defined in: [A single test result](test_result-properties-logs.md "test_rest#/properties/logs")
 
 ### logs Type
 
@@ -171,19 +267,29 @@ undefined
 
 ## outcome
 
-
+An explanation about the purpose of this instance.
 
 
 `outcome`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The outcome schema](test_result-properties-the-outcome-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-outcome.md "undefined#/properties/outcome")
+-   defined in: [A single test result](test_result-properties-the-outcome-schema.md "\#/properties/outcome#/properties/outcome")
 
 ### outcome Type
 
-`string`
+`string` ([The outcome schema](test_result-properties-the-outcome-schema.md))
+
+### outcome Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value       | Explanation |
+| :---------- | ----------- |
+| `"passed"`  |             |
+| `"failed"`  |             |
+| `"skipped"` |             |
 
 ## skipped_messages
 
@@ -195,7 +301,7 @@ undefined
 -   is optional
 -   Type: `object` ([Details](test_result-properties-skipped_messages.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-skipped_messages.md "undefined#/properties/skipped_messages")
+-   defined in: [A single test result](test_result-properties-skipped_messages.md "test_rest#/properties/skipped_messages")
 
 ### skipped_messages Type
 
@@ -203,50 +309,68 @@ undefined
 
 ## stderr
 
-
+An explanation about the purpose of this instance.
 
 
 `stderr`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The stderr schema](test_result-properties-the-stderr-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-stderr.md "undefined#/properties/stderr")
+-   defined in: [A single test result](test_result-properties-the-stderr-schema.md "\#/properties/stderr#/properties/stderr")
 
 ### stderr Type
 
-`string`
+`string` ([The stderr schema](test_result-properties-the-stderr-schema.md))
+
+### stderr Examples
+
+```json
+""
+```
 
 ## stdout
 
-
+An explanation about the purpose of this instance.
 
 
 `stdout`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The stdout schema](test_result-properties-the-stdout-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-stdout.md "undefined#/properties/stdout")
+-   defined in: [A single test result](test_result-properties-the-stdout-schema.md "\#/properties/stdout#/properties/stdout")
 
 ### stdout Type
 
-`string`
+`string` ([The stdout schema](test_result-properties-the-stdout-schema.md))
+
+### stdout Examples
+
+```json
+""
+```
 
 ## test_name
 
-
+An explanation about the purpose of this instance.
 
 
 `test_name`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The test_name schema](test_result-properties-the-test_name-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_result-properties-test_name.md "undefined#/properties/test_name")
+-   defined in: [A single test result](test_result-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name")
 
 ### test_name Type
 
-`string`
+`string` ([The test_name schema](test_result-properties-the-test_name-schema.md))
 
-# Untitled object in undefined Definitions
+### test_name Examples
+
+```json
+"TestClassPassing.test_passing"
+```
+
+# A single test result Definitions

@@ -1,21 +1,21 @@
-# The root schema Schema
+# LITF version message Schema
 
 ```txt
-http://example.com/example.json
+litf_start
 ```
 
-The root schema comprises the entire JSON document.
+LITF version message
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [litf_start.schema.json](../../../spec/0.0.1/litf_start.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [litf_start.schema.json](../../../spec/0.0.1/litf_start.schema.json "open original schema") |
 
-## The root schema Type
+## LITF version message Type
 
-`object` ([The root schema](litf_start.md))
+`object` ([LITF version message](litf_start.md))
 
-## The root schema Examples
+## LITF version message Examples
 
 ```json
 {
@@ -23,12 +23,11 @@ The root schema comprises the entire JSON document.
 }
 ```
 
-# The root schema Properties
+# LITF version message Properties
 
-| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                |
-| :---------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------ |
-| [litf_version](#litf_version) | `string` | Required | cannot be null | [The root schema](litf_start-properties-the-litf_version-schema.md "\#/properties/litf_version#/properties/litf_version") |
-| Additional Properties         | Any      | Optional | can be null    |                                                                                                                           |
+| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                     |
+| :---------------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| [litf_version](#litf_version) | `string` | Required | cannot be null | [LITF version message](litf_start-properties-the-litf_version-schema.md "\#/properties/litf_version#/properties/litf_version") |
 
 ## litf_version
 
@@ -40,7 +39,7 @@ An explanation about the purpose of this instance.
 -   is required
 -   Type: `string` ([The litf_version schema](litf_start-properties-the-litf_version-schema.md))
 -   cannot be null
--   defined in: [The root schema](litf_start-properties-the-litf_version-schema.md "\#/properties/litf_version#/properties/litf_version")
+-   defined in: [LITF version message](litf_start-properties-the-litf_version-schema.md "\#/properties/litf_version#/properties/litf_version")
 
 ### litf_version Type
 
@@ -51,7 +50,3 @@ An explanation about the purpose of this instance.
 ```json
 "0.0.1"
 ```
-
-## Additional Properties
-
-Additional properties are allowed and do not have to follow a specific schema

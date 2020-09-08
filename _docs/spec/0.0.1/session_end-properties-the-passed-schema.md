@@ -1,16 +1,22 @@
-# Untitled number in undefined Schema
+# The passed schema Schema
 
 ```txt
-session_end#/properties/total_duration
+#/properties/passed#/properties/passed
 ```
 
-
+An explanation about the purpose of this instance.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [session_end.schema.json\*](../../../spec/0.0.1/session_end.schema.json "open original schema") |
 
-## total_duration Type
+## passed Type
 
-`number`
+`integer` ([The passed schema](session_end-properties-the-passed-schema.md))
+
+## passed Examples
+
+```json
+14
+```

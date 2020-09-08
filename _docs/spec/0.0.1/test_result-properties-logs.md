@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in A single test result Schema
 
 ```txt
-undefined#/properties/logs
+test_rest#/properties/logs
 ```
 
 

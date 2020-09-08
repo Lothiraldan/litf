@@ -1,44 +1,89 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "session_end",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "additionalProperties": false,
-  "definitions": {},
-  "id": "http://example.com/example.json",
+  "default": {},
+  "description": "The session_end message closes the session.",
+  "examples": [
+    {
+      "_type": "session_end",
+      "error": 4,
+      "failed": 9,
+      "passed": 14,
+      "skipped": 4,
+      "total_duration": 2.1059529781341553
+    }
+  ],
   "properties": {
     "_type": {
+      "$id": "#/properties/_type",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
       "enum": [
         "session_end"
       ],
-      "id": "/properties/_type",
+      "title": "The _type schema",
       "type": "string"
     },
     "error": {
-      "id": "/properties/error",
+      "$id": "#/properties/error",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        4
+      ],
+      "title": "The error schema",
       "type": "integer"
     },
     "failed": {
-      "id": "/properties/failed",
+      "$id": "#/properties/failed",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        9
+      ],
+      "title": "The failed schema",
       "type": "integer"
     },
     "passed": {
-      "id": "/properties/passed",
+      "$id": "#/properties/passed",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        14
+      ],
+      "title": "The passed schema",
       "type": "integer"
     },
     "skipped": {
-      "id": "/properties/skipped",
+      "$id": "#/properties/skipped",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        4
+      ],
+      "title": "The skipped schema",
       "type": "integer"
     },
     "total_duration": {
-      "id": "/properties/total_duration",
+      "$id": "#/properties/total_duration",
+      "default": 0.0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        2.1059529781341553
+      ],
+      "title": "The total_duration schema",
       "type": "number"
     }
   },
   "required": [
-    "_type",
-    "error",
-    "failed",
-    "passed",
     "skipped",
-    "total_duration"
+    "total_duration",
+    "passed",
+    "failed",
+    "error",
+    "_type"
   ],
+  "title": "The end of a session",
   "type": "object"
 }

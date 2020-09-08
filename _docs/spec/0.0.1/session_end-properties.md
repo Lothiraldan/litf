@@ -1,7 +1,7 @@
-# Untitled schema Schema
+# Untitled undefined type in The end of a session Schema
 
 ```txt
-undefined#/properties
+session_end#/properties
 ```
 
 

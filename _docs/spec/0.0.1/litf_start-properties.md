@@ -1,7 +1,7 @@
-# Untitled undefined type in The root schema Schema
+# Untitled undefined type in LITF version message Schema
 
 ```txt
-http://example.com/example.json#/properties
+litf_start#/properties
 ```
 
 

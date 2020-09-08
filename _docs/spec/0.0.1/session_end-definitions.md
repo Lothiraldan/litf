@@ -1,7 +1,7 @@
 # Untitled schema Schema
 
 ```txt
-undefined#/definitions
+session_end#/definitions
 ```
 
 

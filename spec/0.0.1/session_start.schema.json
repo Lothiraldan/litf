@@ -1,24 +1,41 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "session_start",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "additionalProperties": false,
-  "definitions": {},
-  "id": "http://example.com/example.json",
+  "default": {},
+  "description": "The start of the session follow the LITF version and precede the collection or results messages.",
+  "examples": [
+    {
+      "_type": "session_start",
+      "test_number": 29
+    }
+  ],
   "properties": {
     "_type": {
+      "$id": "#/properties/_type",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
       "enum": [
         "session_start"
       ],
-      "id": "/properties/_type",
+      "title": "The _type schema",
       "type": "string"
     },
     "test_number": {
-      "id": "/properties/test_number",
+      "$id": "#/properties/test_number",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        29
+      ],
+      "title": "The test_number schema",
       "type": "integer"
     }
   },
   "required": [
-    "_type",
-    "test_number"
+    "test_number",
+    "_type"
   ],
+  "title": "The start of the session",
   "type": "object"
 }

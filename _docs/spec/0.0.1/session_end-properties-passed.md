@@ -1,7 +1,7 @@
 # Untitled integer in undefined Schema
 
 ```txt
-undefined#/properties/passed
+session_end#/properties/passed
 ```
 
 

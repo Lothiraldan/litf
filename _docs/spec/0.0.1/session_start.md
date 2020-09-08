@@ -1,42 +1,59 @@
-# Untitled object in undefined Schema
+# The start of the session Schema
 
 ```txt
-undefined
+session_start
 ```
 
-
+The start of the session follow the LITF version and precede the collection or results messages.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                        |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------- |
-| Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [session_start.schema.json](../../../spec/0.0.1/session_start.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [session_start.schema.json](../../../spec/0.0.1/session_start.schema.json "open original schema") |
 
-## Untitled object in undefined Type
+## The start of the session Type
 
-`object` ([Details](session_start.md))
+`object` ([The start of the session](session_start.md))
 
-# undefined Properties
+## The start of the session Default Value
 
-| Property                    | Type      | Required | Nullable       | Defined by                                                                                     |
-| :-------------------------- | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------- |
-| [\_type](#_type)            | `string`  | Required | cannot be null | [Untitled schema](session_start-properties-_type.md "undefined#/properties/\_type")            |
-| [test_number](#test_number) | `integer` | Required | cannot be null | [Untitled schema](session_start-properties-test_number.md "undefined#/properties/test_number") |
+The default value is:
+
+```json
+{}
+```
+
+## The start of the session Examples
+
+```json
+{
+  "_type": "session_start",
+  "test_number": 29
+}
+```
+
+# The start of the session Properties
+
+| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                         |
+| :-------------------------- | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| [\_type](#_type)            | `string`  | Required | cannot be null | [The start of the session](session_start-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")                 |
+| [test_number](#test_number) | `integer` | Required | cannot be null | [The start of the session](session_start-properties-the-test_number-schema.md "\#/properties/test_number#/properties/test_number") |
 
 ## \_type
 
-
+An explanation about the purpose of this instance.
 
 
 `_type`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The \_type schema](session_start-properties-the-_type-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](session_start-properties-_type.md "undefined#/properties/\_type")
+-   defined in: [The start of the session](session_start-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")
 
 ### \_type Type
 
-`string`
+`string` ([The \_type schema](session_start-properties-the-_type-schema.md))
 
 ### \_type Constraints
 
@@ -48,18 +65,22 @@ undefined
 
 ## test_number
 
-
+An explanation about the purpose of this instance.
 
 
 `test_number`
 
 -   is required
--   Type: `integer`
+-   Type: `integer` ([The test_number schema](session_start-properties-the-test_number-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](session_start-properties-test_number.md "undefined#/properties/test_number")
+-   defined in: [The start of the session](session_start-properties-the-test_number-schema.md "\#/properties/test_number#/properties/test_number")
 
 ### test_number Type
 
-`integer`
+`integer` ([The test_number schema](session_start-properties-the-test_number-schema.md))
 
-# Untitled object in undefined Definitions
+### test_number Examples
+
+```json
+29
+```

@@ -1,30 +1,67 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "test_collection",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "additionalProperties": false,
-  "definitions": {},
-  "id": "http://example.com/example.json",
+  "default": {},
+  "description": "The test_collection message contains all identifying information about a test that has been collected but not runned.",
+  "examples": [
+    {
+      "_type": "test_collection",
+      "file": "test_class.py",
+      "id": "test_class.py::TestClassPassing::()::test_passing",
+      "line": 8,
+      "test_name": "TestClassPassing.test_passing"
+    }
+  ],
   "properties": {
     "_type": {
+      "$id": "#/properties/_type",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
       "enum": [
         "test_collection"
       ],
-      "id": "/properties/_type",
+      "title": "The _type schema",
       "type": "string"
     },
     "file": {
-      "id": "/properties/file",
+      "$id": "#/properties/file",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "test_class.py"
+      ],
+      "title": "The file schema",
       "type": "string"
     },
     "id": {
-      "id": "/properties/id",
+      "$id": "#/properties/id",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "test_class.py::TestClassPassing::()::test_passing"
+      ],
+      "title": "The id schema",
       "type": "string"
     },
     "line": {
-      "id": "/properties/line",
+      "$id": "#/properties/line",
+      "default": 0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        8
+      ],
+      "title": "The line schema",
       "type": "integer"
     },
     "test_name": {
-      "id": "/properties/test_name",
+      "$id": "#/properties/test_name",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "TestClassPassing.test_passing"
+      ],
+      "title": "The test_name schema",
       "type": "string"
     }
   },
@@ -32,5 +69,6 @@
     "_type",
     "id"
   ],
+  "title": "A single test collection message",
   "type": "object"
 }

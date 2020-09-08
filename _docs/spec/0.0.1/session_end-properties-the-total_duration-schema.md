@@ -1,10 +1,10 @@
-# Untitled number in undefined Schema
+# The total_duration schema Schema
 
 ```txt
-session_end#/properties/total_duration
+#/properties/total_duration#/properties/total_duration
 ```
 
-
+An explanation about the purpose of this instance.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
@@ -13,4 +13,10 @@ session_end#/properties/total_duration
 
 ## total_duration Type
 
-`number`
+`number` ([The total_duration schema](session_end-properties-the-total_duration-schema.md))
+
+## total_duration Examples
+
+```json
+2.1059529781341553
+```

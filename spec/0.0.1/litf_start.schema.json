@@ -1,8 +1,8 @@
 {
-  "$id": "http://example.com/example.json",
+  "$id": "litf_start",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "additionalProperties": true,
-  "description": "The root schema comprises the entire JSON document.",
+  "additionalProperties": false,
+  "description": "LITF version message",
   "examples": [
     {
       "litf_version": "0.0.1"
@@ -22,6 +22,6 @@
   "required": [
     "litf_version"
   ],
-  "title": "The root schema",
+  "title": "LITF version message",
   "type": "object"
 }

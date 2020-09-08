@@ -1,7 +1,7 @@
 # Untitled string in undefined Schema
 
 ```txt
-undefined#/properties/_type
+session_end#/properties/_type
 ```
 
 

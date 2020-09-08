@@ -1,7 +1,7 @@
 # Untitled integer in undefined Schema
 
 ```txt
-undefined#/properties/error
+session_end#/properties/error
 ```
 
 

@@ -1,45 +1,65 @@
-# Untitled object in undefined Schema
+# A single test collection message Schema
 
 ```txt
-undefined
+test_collection
 ```
 
-
+The test_collection message contains all identifying information about a test that has been collected but not runned.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                            |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
-| Can be instantiated | Yes        | Unknown status | No           | Forbidden         | Forbidden             | none                | [test_collection.schema.json](../../../spec/0.0.1/test_collection.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [test_collection.schema.json](../../../spec/0.0.1/test_collection.schema.json "open original schema") |
 
-## Untitled object in undefined Type
+## A single test collection message Type
 
-`object` ([Details](test_collection.md))
+`object` ([A single test collection message](test_collection.md))
 
-# undefined Properties
+## A single test collection message Default Value
 
-| Property                | Type      | Required | Nullable       | Defined by                                                                                   |
-| :---------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------- |
-| [\_type](#_type)        | `string`  | Required | cannot be null | [Untitled schema](test_collection-properties-_type.md "undefined#/properties/\_type")        |
-| [file](#file)           | `string`  | Optional | cannot be null | [Untitled schema](test_collection-properties-file.md "undefined#/properties/file")           |
-| [id](#id)               | `string`  | Required | cannot be null | [Untitled schema](test_collection-properties-id.md "undefined#/properties/id")               |
-| [line](#line)           | `integer` | Optional | cannot be null | [Untitled schema](test_collection-properties-line.md "undefined#/properties/line")           |
-| [test_name](#test_name) | `string`  | Optional | cannot be null | [Untitled schema](test_collection-properties-test_name.md "undefined#/properties/test_name") |
+The default value is:
+
+```json
+{}
+```
+
+## A single test collection message Examples
+
+```json
+{
+  "_type": "test_collection",
+  "file": "test_class.py",
+  "id": "test_class.py::TestClassPassing::()::test_passing",
+  "line": 8,
+  "test_name": "TestClassPassing.test_passing"
+}
+```
+
+# A single test collection message Properties
+
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                             |
+| :---------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| [\_type](#_type)        | `string`  | Required | cannot be null | [A single test collection message](test_collection-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")           |
+| [file](#file)           | `string`  | Optional | cannot be null | [A single test collection message](test_collection-properties-the-file-schema.md "\#/properties/file#/properties/file")                |
+| [id](#id)               | `string`  | Required | cannot be null | [A single test collection message](test_collection-properties-the-id-schema.md "\#/properties/id#/properties/id")                      |
+| [line](#line)           | `integer` | Optional | cannot be null | [A single test collection message](test_collection-properties-the-line-schema.md "\#/properties/line#/properties/line")                |
+| [test_name](#test_name) | `string`  | Optional | cannot be null | [A single test collection message](test_collection-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name") |
 
 ## \_type
 
-
+An explanation about the purpose of this instance.
 
 
 `_type`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The \_type schema](test_collection-properties-the-_type-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_collection-properties-_type.md "undefined#/properties/\_type")
+-   defined in: [A single test collection message](test_collection-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")
 
 ### \_type Type
 
-`string`
+`string` ([The \_type schema](test_collection-properties-the-_type-schema.md))
 
 ### \_type Constraints
 
@@ -51,66 +71,88 @@ undefined
 
 ## file
 
-
+An explanation about the purpose of this instance.
 
 
 `file`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The file schema](test_collection-properties-the-file-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_collection-properties-file.md "undefined#/properties/file")
+-   defined in: [A single test collection message](test_collection-properties-the-file-schema.md "\#/properties/file#/properties/file")
 
 ### file Type
 
-`string`
+`string` ([The file schema](test_collection-properties-the-file-schema.md))
+
+### file Examples
+
+```json
+"test_class.py"
+```
 
 ## id
 
-
+An explanation about the purpose of this instance.
 
 
 `id`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([The id schema](test_collection-properties-the-id-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_collection-properties-id.md "undefined#/properties/id")
+-   defined in: [A single test collection message](test_collection-properties-the-id-schema.md "\#/properties/id#/properties/id")
 
 ### id Type
 
-`string`
+`string` ([The id schema](test_collection-properties-the-id-schema.md))
+
+### id Examples
+
+```json
+"test_class.py::TestClassPassing::()::test_passing"
+```
 
 ## line
 
-
+An explanation about the purpose of this instance.
 
 
 `line`
 
 -   is optional
--   Type: `integer`
+-   Type: `integer` ([The line schema](test_collection-properties-the-line-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_collection-properties-line.md "undefined#/properties/line")
+-   defined in: [A single test collection message](test_collection-properties-the-line-schema.md "\#/properties/line#/properties/line")
 
 ### line Type
 
-`integer`
+`integer` ([The line schema](test_collection-properties-the-line-schema.md))
+
+### line Examples
+
+```json
+8
+```
 
 ## test_name
 
-
+An explanation about the purpose of this instance.
 
 
 `test_name`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The test_name schema](test_collection-properties-the-test_name-schema.md))
 -   cannot be null
--   defined in: [Untitled schema](test_collection-properties-test_name.md "undefined#/properties/test_name")
+-   defined in: [A single test collection message](test_collection-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name")
 
 ### test_name Type
 
-`string`
+`string` ([The test_name schema](test_collection-properties-the-test_name-schema.md))
 
-# Untitled object in undefined Definitions
+### test_name Examples
+
+```json
+"TestClassPassing.test_passing"
+```

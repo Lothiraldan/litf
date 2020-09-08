@@ -1,16 +1,22 @@
-# Untitled number in undefined Schema
+# The stdout schema Schema
 
 ```txt
-session_end#/properties/total_duration
+#/properties/stdout#/properties/stdout
 ```
 
-
+An explanation about the purpose of this instance.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [session_end.schema.json\*](../../../spec/0.0.1/session_end.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [test_result.schema.json\*](../../../spec/0.0.1/test_result.schema.json "open original schema") |
 
-## total_duration Type
+## stdout Type
 
-`number`
+`string` ([The stdout schema](test_result-properties-the-stdout-schema.md))
+
+## stdout Examples
+
+```json
+""
+```

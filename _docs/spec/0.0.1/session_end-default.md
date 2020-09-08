@@ -1,7 +1,7 @@
-# Untitled number in undefined Schema
+# Untitled undefined type in The end of a session Schema
 
 ```txt
-session_end#/properties/total_duration
+session_end#/default
 ```
 
 
@@ -11,6 +11,6 @@ session_end#/properties/total_duration
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [session_end.schema.json\*](../../../spec/0.0.1/session_end.schema.json "open original schema") |
 
-## total_duration Type
+## default Type
 
-`number`
+unknown
