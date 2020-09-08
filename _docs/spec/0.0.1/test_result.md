@@ -1,7 +1,7 @@
 # A single test result Schema
 
 ```txt
-test_rest
+test_result
 ```
 
 The test_collection message contains all identifying information about a test, its status and any information needed to debug it.

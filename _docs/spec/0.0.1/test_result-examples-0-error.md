@@ -1,7 +1,7 @@
 # Untitled undefined type in A single test result Schema
 
 ```txt
-test_rest#/examples/0/error
+test_result#/examples/0/error
 ```
 
 
