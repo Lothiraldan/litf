@@ -89,21 +89,21 @@ The test_collection message contains all identifying information about a test, i
 
 # A single test result Properties
 
-| Property                              | Type      | Required | Nullable       | Defined by                                                                                                             |
-| :------------------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [\_type](#_type)                      | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")           |
-| [duration](#duration)                 | `number`  | Optional | cannot be null | [A single test result](test_result-properties-the-duration-schema.md "\#/properties/duration#/properties/duration")    |
-| [durations](#durations)               | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-durations-schema.md "\#/properties/durations#/properties/durations") |
-| [error](#error)                       | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-error-schema.md "\#/properties/error#/properties/error")             |
-| [file](#file)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-file-schema.md "\#/properties/file#/properties/file")                |
-| [id](#id)                             | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-id-schema.md "\#/properties/id#/properties/id")                      |
-| [line](#line)                         | `integer` | Optional | cannot be null | [A single test result](test_result-properties-the-line-schema.md "\#/properties/line#/properties/line")                |
-| [logs](#logs)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-logs.md "test_rest#/properties/logs")                                    |
-| [outcome](#outcome)                   | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-outcome-schema.md "\#/properties/outcome#/properties/outcome")       |
-| [skipped_messages](#skipped_messages) | `object`  | Optional | cannot be null | [A single test result](test_result-properties-skipped_messages.md "test_rest#/properties/skipped_messages")            |
-| [stderr](#stderr)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stderr-schema.md "\#/properties/stderr#/properties/stderr")          |
-| [stdout](#stdout)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stdout-schema.md "\#/properties/stdout#/properties/stdout")          |
-| [test_name](#test_name)               | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name") |
+| Property                              | Type      | Required | Nullable       | Defined by                                                                                                                                  |
+| :------------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| [\_type](#_type)                      | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")                                |
+| [duration](#duration)                 | `number`  | Optional | cannot be null | [A single test result](test_result-properties-the-duration-schema.md "\#/properties/duration#/properties/duration")                         |
+| [durations](#durations)               | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-durations-schema.md "\#/properties/durations#/properties/durations")                      |
+| [error](#error)                       | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-error-schema.md "\#/properties/error#/properties/error")                                  |
+| [file](#file)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-file-schema.md "\#/properties/file#/properties/file")                                     |
+| [id](#id)                             | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-id-schema.md "\#/properties/id#/properties/id")                                           |
+| [line](#line)                         | `integer` | Optional | cannot be null | [A single test result](test_result-properties-the-line-schema.md "\#/properties/line#/properties/line")                                     |
+| [logs](#logs)                         | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-logs-schema.md "\#/properties/logs#/properties/logs")                                     |
+| [outcome](#outcome)                   | `string`  | Required | cannot be null | [A single test result](test_result-properties-the-outcome-schema.md "\#/properties/outcome#/properties/outcome")                            |
+| [skipped_messages](#skipped_messages) | `object`  | Optional | cannot be null | [A single test result](test_result-properties-the-skipped_messages-schema.md "\#/properties/skipped_messages#/properties/skipped_messages") |
+| [stderr](#stderr)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stderr-schema.md "\#/properties/stderr#/properties/stderr")                               |
+| [stdout](#stdout)                     | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-stdout-schema.md "\#/properties/stdout#/properties/stdout")                               |
+| [test_name](#test_name)               | `string`  | Optional | cannot be null | [A single test result](test_result-properties-the-test_name-schema.md "\#/properties/test_name#/properties/test_name")                      |
 
 ## \_type
 
@@ -251,19 +251,25 @@ An explanation about the purpose of this instance.
 
 ## logs
 
-
+An explanation about the purpose of this instance.
 
 
 `logs`
 
 -   is optional
--   Type: `string`
+-   Type: `string` ([The logs schema](test_result-properties-the-logs-schema.md))
 -   cannot be null
--   defined in: [A single test result](test_result-properties-logs.md "test_rest#/properties/logs")
+-   defined in: [A single test result](test_result-properties-the-logs-schema.md "\#/properties/logs#/properties/logs")
 
 ### logs Type
 
-`string`
+`string` ([The logs schema](test_result-properties-the-logs-schema.md))
+
+### logs Examples
+
+```json
+""
+```
 
 ## outcome
 
@@ -293,19 +299,35 @@ An explanation about the purpose of this instance.
 
 ## skipped_messages
 
-
+This field contains the skipped message or reasons, the field name coud indicate when the test was marked as skipped, for example during setup or the actuall call.
 
 
 `skipped_messages`
 
 -   is optional
--   Type: `object` ([Details](test_result-properties-skipped_messages.md))
+-   Type: `object` ([The skipped_messages schema](test_result-properties-the-skipped_messages-schema.md))
 -   cannot be null
--   defined in: [A single test result](test_result-properties-skipped_messages.md "test_rest#/properties/skipped_messages")
+-   defined in: [A single test result](test_result-properties-the-skipped_messages-schema.md "\#/properties/skipped_messages#/properties/skipped_messages")
 
 ### skipped_messages Type
 
-`object` ([Details](test_result-properties-skipped_messages.md))
+`object` ([The skipped_messages schema](test_result-properties-the-skipped_messages-schema.md))
+
+### skipped_messages Default Value
+
+The default value is:
+
+```json
+{}
+```
+
+### skipped_messages Examples
+
+```json
+{
+  "setup": "Skipped: Skip"
+}
+```
 
 ## stderr
 

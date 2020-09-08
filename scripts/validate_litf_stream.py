@@ -90,7 +90,8 @@ def test(stream):
             continue
 
         # Get the schema
-        schema_path = os.path.join(script_dir, msg_type + ".json")
+        litf_version = "0.0.1"  # TODO: Use the first message to get version
+        schema_path = os.path.join(script_dir, litf_version, msg_type + ".schema.json")
 
         with open(schema_path, "r") as schema_file:
             schema = json.load(schema_file)

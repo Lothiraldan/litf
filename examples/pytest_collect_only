@@ -1,32 +1,36 @@
-{"test_number": 29, "_type": "session_start"}
-{"line": 8, "test_name": "TestClassPassing.test_passing", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassPassing::()::test_passing"}
-{"line": 20, "test_name": "TestClassFailing.test_failing", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassFailing::()::test_failing"}
-{"line": 32, "test_name": "TestClassError.test_error", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassError::()::test_error"}
-{"line": 44, "test_name": "TestClassFailingAndErrorTeardown.test_error", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassFailingAndErrorTeardown::()::test_error"}
-{"line": 56, "test_name": "TestClassErrorSetup.test_passing", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassErrorSetup::()::test_passing"}
-{"line": 68, "test_name": "TestClassErrorSetupAndTeardown.test_passing", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassErrorSetupAndTeardown::()::test_passing"}
-{"line": 80, "test_name": "TestClassErrorTeardown.test_passing", "_type": "test_collection", "file": "test_class.py", "id": "test_class.py::TestClassErrorTeardown::()::test_passing"}
-{"line": 3, "test_name": "test_success", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_success"}
-{"line": 7, "test_name": "test_fails", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_fails"}
-{"line": 11, "test_name": "test_fixtures[0]", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_fixtures[0]"}
-{"line": 11, "test_name": "test_fixtures[1]", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_fixtures[1]"}
-{"line": 11, "test_name": "test_fixtures[2]", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_fixtures[2]"}
-{"line": 16, "test_name": "test_error", "_type": "test_collection", "file": "test_func.py", "id": "test_func.py::test_error"}
-{"line": 8, "test_name": "test_passing", "_type": "test_collection", "file": "test_module_setup_teardown.py", "id": "test_module_setup_teardown.py::test_passing"}
-{"line": 12, "test_name": "test_failing", "_type": "test_collection", "file": "test_module_setup_teardown.py", "id": "test_module_setup_teardown.py::test_failing"}
-{"line": 24, "test_name": "TestClassPassing.test_passing", "_type": "test_collection", "file": "test_module_setup_teardown.py", "id": "test_module_setup_teardown.py::TestClassPassing::()::test_passing"}
-{"line": 36, "test_name": "TestClassFailing.test_failing", "_type": "test_collection", "file": "test_module_setup_teardown.py", "id": "test_module_setup_teardown.py::TestClassFailing::()::test_failing"}
-{"line": 2, "test_name": "test_random", "_type": "test_collection", "file": "test_random.py", "id": "test_random.py::test_random"}
-{"line": 2, "test_name": "test_skip_function", "_type": "test_collection", "file": "test_skip.py", "id": "test_skip.py::test_skip_function"}
-{"line": 9, "test_name": "TestSkipCall.test_skip_method", "_type": "test_collection", "file": "test_skip.py", "id": "test_skip.py::TestSkipCall::()::test_skip_method"}
-{"line": 17, "test_name": "TestSkipClass.test_skipped_1", "_type": "test_collection", "file": "test_skip.py", "id": "test_skip.py::TestSkipClass::()::test_skipped_1"}
-{"line": 20, "test_name": "TestSkipClass.test_skipped_2", "_type": "test_collection", "file": "test_skip.py", "id": "test_skip.py::TestSkipClass::()::test_skipped_2"}
-{"line": 2, "test_name": "test_slow_passing", "_type": "test_collection", "file": "test_slow.py", "id": "test_slow.py::test_slow_passing"}
-{"line": 3, "test_name": "test_stdout", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::test_stdout"}
-{"line": 7, "test_name": "test_stderr", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::test_stderr"}
-{"line": 19, "test_name": "TestClassStdout.test_stdout", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::TestClassStdout::()::test_stdout"}
-{"line": 31, "test_name": "TestClassStdoutSetup.test_stdout", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::TestClassStdoutSetup::()::test_stdout"}
-{"line": 43, "test_name": "TestClassStdoutAllPhases.test_stdout", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::TestClassStdoutAllPhases::()::test_stdout"}
-{"line": 55, "test_name": "TestClassFailing.test_stderr", "_type": "test_collection", "file": "test_std.py", "id": "test_std.py::TestClassFailing::()::test_stderr"}
+{"_type": "litf_start", "litf_version": "0.0.1"}
+{"_type": "session_start", "test_number": 32}
+{"_type": "test_collection", "line": 8, "file": "test_class.py", "test_name": "TestClassPassing.test_passing", "id": "test_class.py::TestClassPassing::test_passing"}
+{"_type": "test_collection", "line": 19, "file": "test_class.py", "test_name": "TestClassFailing.test_failing", "id": "test_class.py::TestClassFailing::test_failing"}
+{"_type": "test_collection", "line": 30, "file": "test_class.py", "test_name": "TestClassError.test_error", "id": "test_class.py::TestClassError::test_error"}
+{"_type": "test_collection", "line": 41, "file": "test_class.py", "test_name": "TestClassFailingAndErrorTeardown.test_error", "id": "test_class.py::TestClassFailingAndErrorTeardown::test_error"}
+{"_type": "test_collection", "line": 52, "file": "test_class.py", "test_name": "TestClassErrorSetup.test_passing", "id": "test_class.py::TestClassErrorSetup::test_passing"}
+{"_type": "test_collection", "line": 63, "file": "test_class.py", "test_name": "TestClassErrorSetupAndTeardown.test_passing", "id": "test_class.py::TestClassErrorSetupAndTeardown::test_passing"}
+{"_type": "test_collection", "line": 74, "file": "test_class.py", "test_name": "TestClassErrorTeardown.test_passing", "id": "test_class.py::TestClassErrorTeardown::test_passing"}
+{"_type": "test_collection", "line": 4, "file": "test_func.py", "test_name": "test_success", "id": "test_func.py::test_success"}
+{"_type": "test_collection", "line": 8, "file": "test_func.py", "test_name": "test_fails", "id": "test_func.py::test_fails"}
+{"_type": "test_collection", "line": 12, "file": "test_func.py", "test_name": "test_fixtures[0]", "id": "test_func.py::test_fixtures[0]"}
+{"_type": "test_collection", "line": 12, "file": "test_func.py", "test_name": "test_fixtures[1]", "id": "test_func.py::test_fixtures[1]"}
+{"_type": "test_collection", "line": 12, "file": "test_func.py", "test_name": "test_fixtures[2]", "id": "test_func.py::test_fixtures[2]"}
+{"_type": "test_collection", "line": 17, "file": "test_func.py", "test_name": "test_error", "id": "test_func.py::test_error"}
+{"_type": "test_collection", "line": 9, "file": "test_module_setup_teardown.py", "test_name": "test_passing", "id": "test_module_setup_teardown.py::test_passing"}
+{"_type": "test_collection", "line": 13, "file": "test_module_setup_teardown.py", "test_name": "test_failing", "id": "test_module_setup_teardown.py::test_failing"}
+{"_type": "test_collection", "line": 24, "file": "test_module_setup_teardown.py", "test_name": "TestClassPassing.test_passing", "id": "test_module_setup_teardown.py::TestClassPassing::test_passing"}
+{"_type": "test_collection", "line": 35, "file": "test_module_setup_teardown.py", "test_name": "TestClassFailing.test_failing", "id": "test_module_setup_teardown.py::TestClassFailing::test_failing"}
+{"_type": "test_collection", "line": 4, "file": "test_skip.py", "test_name": "test_skip_function", "id": "test_skip.py::test_skip_function"}
+{"_type": "test_collection", "line": 10, "file": "test_skip.py", "test_name": "TestSkipCall.test_skip_method", "id": "test_skip.py::TestSkipCall::test_skip_method"}
+{"_type": "test_collection", "line": 17, "file": "test_skip.py", "test_name": "TestSkipClass.test_skipped_1", "id": "test_skip.py::TestSkipClass::test_skipped_1"}
+{"_type": "test_collection", "line": 20, "file": "test_skip.py", "test_name": "TestSkipClass.test_skipped_2", "id": "test_skip.py::TestSkipClass::test_skipped_2"}
+{"_type": "test_collection", "line": 4, "file": "test_slow.py", "test_name": "test_slow_passing", "id": "test_slow.py::test_slow_passing"}
+{"_type": "test_collection", "line": 4, "file": "test_std.py", "test_name": "test_stdout", "id": "test_std.py::test_stdout"}
+{"_type": "test_collection", "line": 8, "file": "test_std.py", "test_name": "test_stderr", "id": "test_std.py::test_stderr"}
+{"_type": "test_collection", "line": 19, "file": "test_std.py", "test_name": "TestClassStdout.test_stdout", "id": "test_std.py::TestClassStdout::test_stdout"}
+{"_type": "test_collection", "line": 30, "file": "test_std.py", "test_name": "TestClassStdoutSetup.test_stdout", "id": "test_std.py::TestClassStdoutSetup::test_stdout"}
+{"_type": "test_collection", "line": 41, "file": "test_std.py", "test_name": "TestClassStdoutAllPhases.test_stdout", "id": "test_std.py::TestClassStdoutAllPhases::test_stdout"}
+{"_type": "test_collection", "line": 52, "file": "test_std.py", "test_name": "TestClassFailing.test_stderr", "id": "test_std.py::TestClassFailing::test_stderr"}
+{"_type": "test_collection", "line": 8, "file": "test_unittest.py", "test_name": "TestStringMethods.test_isupper", "id": "test_unittest.py::TestStringMethods::test_isupper"}
+{"_type": "test_collection", "line": 5, "file": "test_unittest.py", "test_name": "TestStringMethods.test_upper", "id": "test_unittest.py::TestStringMethods::test_upper"}
+{"_type": "test_collection", "line": 4, "file": "directory/test_file_2.py", "test_name": "test_success", "id": "directory/test_file_2.py::test_success"}
+{"_type": "test_collection", "line": 4, "file": "directory/test_func.py", "test_name": "test_success", "id": "directory/test_func.py::test_success"}
 
-{"_type": "session_end", "passed": 0, "total_duration": 0.03194689750671387, "skipped": 0, "failed": 0, "error": 0}
+{"_type": "session_end", "total_duration": 0.07984471321105957, "passed": 0, "failed": 0, "error": 0, "skipped": 0}

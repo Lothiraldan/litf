@@ -19,6 +19,7 @@ LITF version message
 
 ```json
 {
+  "_type": "litf_start",
   "litf_version": "0.0.1"
 }
 ```
@@ -27,7 +28,32 @@ LITF version message
 
 | Property                      | Type     | Required | Nullable       | Defined by                                                                                                                     |
 | :---------------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| [\_type](#_type)              | `string` | Optional | cannot be null | [LITF version message](litf_start-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")                    |
 | [litf_version](#litf_version) | `string` | Required | cannot be null | [LITF version message](litf_start-properties-the-litf_version-schema.md "\#/properties/litf_version#/properties/litf_version") |
+
+## \_type
+
+An explanation about the purpose of this instance.
+
+
+`_type`
+
+-   is optional
+-   Type: `string` ([The \_type schema](litf_start-properties-the-_type-schema.md))
+-   cannot be null
+-   defined in: [LITF version message](litf_start-properties-the-_type-schema.md "\#/properties/\_type#/properties/\_type")
+
+### \_type Type
+
+`string` ([The \_type schema](litf_start-properties-the-_type-schema.md))
+
+### \_type Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value          | Explanation |
+| :------------- | ----------- |
+| `"litf_start"` |             |
 
 ## litf_version
 

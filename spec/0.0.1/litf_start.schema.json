@@ -5,10 +5,20 @@
   "description": "LITF version message",
   "examples": [
     {
+      "_type": "litf_start",
       "litf_version": "0.0.1"
     }
   ],
   "properties": {
+    "_type": {
+      "$id": "#/properties/_type",
+      "description": "An explanation about the purpose of this instance.",
+      "enum": [
+        "litf_start"
+      ],
+      "title": "The _type schema",
+      "type": "string"
+    },
     "litf_version": {
       "$id": "#/properties/litf_version",
       "description": "An explanation about the purpose of this instance.",

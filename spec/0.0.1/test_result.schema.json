@@ -141,7 +141,13 @@
       "type": "integer"
     },
     "logs": {
-      "id": "/properties/logs",
+      "$id": "#/properties/logs",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        ""
+      ],
+      "title": "The logs schema",
       "type": "string"
     },
     "outcome": {
@@ -156,7 +162,21 @@
       "type": "string"
     },
     "skipped_messages": {
-      "id": "/properties/skipped_messages",
+      "$id": "#/properties/skipped_messages",
+      "additionalProperties": true,
+      "default": {},
+      "description": "This field contains the skipped message or reasons, the field name coud indicate when the test was marked as skipped, for example during setup or the actuall call.",
+      "examples": [
+        {
+          "setup": "Skipped: Skip"
+        }
+      ],
+      "patternProperties": {
+        "^.*$": {
+          "type": "number"
+        }
+      },
+      "title": "The skipped_messages schema",
       "type": "object"
     },
     "stderr": {
