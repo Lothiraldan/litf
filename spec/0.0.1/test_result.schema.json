@@ -89,12 +89,10 @@
     },
     "durations": {
       "$id": "#/properties/durations",
-      "description": "An explanation about the purpose of this instance.",
-      "patternProperties": {
-        "^.*$": {
-          "type": "number"
-        }
+      "additionalProperties": {
+        "type": "string"
       },
+      "description": "An explanation about the purpose of this instance.",
       "title": "The durations schema",
       "type": "object"
     },
@@ -163,7 +161,9 @@
     },
     "skipped_messages": {
       "$id": "#/properties/skipped_messages",
-      "additionalProperties": true,
+      "additionalProperties": {
+        "type": "string"
+      },
       "default": {},
       "description": "This field contains the skipped message or reasons, the field name coud indicate when the test was marked as skipped, for example during setup or the actuall call.",
       "examples": [
@@ -171,11 +171,6 @@
           "setup": "Skipped: Skip"
         }
       ],
-      "patternProperties": {
-        "^.*$": {
-          "type": "number"
-        }
-      },
       "title": "The skipped_messages schema",
       "type": "object"
     },
